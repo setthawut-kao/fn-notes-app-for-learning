@@ -4,7 +4,8 @@ import { useAuth } from "../../context/AuthContext";
 const Navbar = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
-  const isAuthRoute = location.pathname === "/login" || location.pathname === "/signup";
+  const isAuthRoute =
+    location.pathname === "/login" || location.pathname === "/signup";
   return (
     <nav className="bg-yellow-200 border-b-4 border-black px-8 py-4 flex items-center justify-between">
       <div className="flex items-center space-x-4">
